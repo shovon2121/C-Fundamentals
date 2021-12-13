@@ -1,28 +1,35 @@
-
 #include <iostream>
 using namespace std;
+
+
 class Employee {
-   public:
-       int id;//data member (also instance variable)
-       string name;//data member(also instance variable)
-       float salary;
-       void insert(int i, string n, float s)
+
+    public:
+        int id;
+        string name;
+
+        void insert(int i, string n)
         {
             id = i;
             name = n;
-            salary = s;
         }
-       void display()
+
+        void display()
         {
-            cout<<id<<"  "<<name<<"  "<<salary<<endl;
+            cout << id << " " << name;
         }
 };
-int main(void) {
-    Employee e1; //creating an object of Employee
-    Employee e2; //creating an object of Employee
-    e1.insert(201, "Sonoo",990000);
-    e2.insert(202, "Nakul", 29000);
-    e1.display();
-    e2.display();
+
+
+int main()
+{
+    Employee e;
+    e.insert(100, "shovon");
+    e.display();
     return 0;
 }
+
+
+
+
+
